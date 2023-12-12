@@ -1,0 +1,1040 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-position: inside;
+    font-family: "Times New Roman", sans-serif;
+}
+
+/*navigation menu*/
+
+* {
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Times New Roman", sans-serif;
+}
+
+
+.nav_con {
+    display: grid;
+    grid-template-columns: 30% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-rows: repeat(1,80px);
+    align-items: center;
+    text-align: center;
+    background-color:rgb(238,235,230);
+}
+
+.nav_con li:first-child {
+    text-align: left;
+    box-sizing: border-box;
+    margin-left: 5%;
+}
+
+.nav_con a {
+    color: darkmagenta;
+    font-size: x-large;
+}
+
+.nav_con li:nth-child(1) a {
+    color: darkmagenta;
+    font-size: xx-large;
+    font-family: "Brush Script MT";
+}
+
+.nav_con button {
+    color: white;
+    box-sizing: border-box;
+    box-shadow: none;
+    border: none;
+    padding: 15px 30px;
+    /*border-radius: 10px;*/
+    font-size: large;
+    background-color: darkmagenta;
+    cursor: pointer;
+}
+
+.hamburger_menu {
+    display: none;
+}
+
+/*introduction to hotel */
+
+.intro_section {
+    display: grid;
+    grid-template-columns: repeat(1,100%);
+    text-align: left;
+}
+
+.intro_img {
+    width:100%;
+    height: auto;
+    margin: 0;
+}
+
+.intro_text {
+    width:100%;
+    background-color:rgb(249, 242, 246);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0;
+}
+
+
+/*introduction paragraph*/
+
+.intro_para {
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+/*font properties of paragraphs*/
+.font_pera {
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*color a single word of a paragraph*/
+.color_word{
+    color: darkmagenta;
+}
+
+.branch_ul{
+    margin-left: 30px;
+    list-style-type: disc !important;
+    text-align: left;
+}
+
+/*all the code for a single horizontal section*/
+
+/*to display the picture on the left*/
+.display {
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+}
+
+
+
+.right_img {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+
+}
+
+.left_img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+
+}
+
+.left_txt{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    background-color:rgb(240,238,233);
+    box-sizing: border-box;
+    text-align: left;
+    padding: 10%;
+}
+
+.right_txt{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-color:rgb(240,238,233);
+    box-sizing: border-box;
+    text-align: left;
+    padding: 10%;
+}
+
+
+
+/*headings*/
+.heading {
+    color: rgb(136,126,114);
+    font-size: xxx-large;
+    text-align: center;
+
+
+}
+
+.colored_text {
+    color: darkmagenta;
+    font-size: xxx-large;
+}
+
+
+/*footer section*/
+
+
+.background_footer {
+    /*background-color:rgb(238,235,230);*/
+    background-color: cornsilk;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px
+}
+
+
+
+.footer_divs{
+    box-sizing: border-box;
+    padding: 10px;
+    color: black;
+    height: 300px;
+}
+
+.footer_ul {
+    list-style: none;
+}
+
+.footer_li {
+    padding: 2px;
+}
+
+.footer_a {
+    color: black;
+}
+
+.social_ul {
+    list-style: none;
+}
+
+.social_li {
+    text-decoration: none;
+    display: inline;
+}
+
+.footer_heading {
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.copyright {
+    text-align: center;
+    color: black;
+}
+
+.loc1_iframe {
+    width: 350px;
+    height: 200px;
+}
+
+
+.loc2_iframe {
+    width: 350px;
+    height: 200px;
+}
+
+.footer_divs {
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    text-align: center;
+}
+
+/*footer icons*/
+
+.footer_icons {
+    width: 48px;
+    height: 48px;
+}
+
+/*Branches Page*/
+
+
+/*Branch Contact info*/
+
+.contact_branch {
+    margin: 0;
+    width: 100%;
+    height: 300px;
+    background-color:rgb(249, 242, 246);
+    padding-top: 30px;
+}
+
+.contact_branch ul {
+    list-style: none;
+    padding-left:50px ;
+}
+
+.contact_branch h1 {
+    padding-left:50px ;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+
+
+/*Table*/
+
+.table {
+    border-collapse: collapse;
+    min-width: 500px;
+}
+
+.table thead tr {
+    background-color:rgb(249, 242, 246);
+    color: darkmagenta;
+    text-align: center;
+}
+
+.table th, .table td {
+    padding: 10px;
+}
+
+.table tr {
+    border-bottom: 1px solid lightgrey;
+}
+
+.table thead tr th:nth-child(1),
+.table thead tr th:nth-child(2),
+.table thead tr th:nth-child(3)
+{
+    background-color: darkmagenta;
+    color: white;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+.table tfoot {
+    background-color:rgb(249, 242, 246);
+    color: darkmagenta;
+    text-align: center;
+}
+
+.lrn_btn {
+    box-sizing: border-box;
+    color: white;
+    background: darkmagenta;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.table img {
+    width: 20px;
+    height: 20px;
+}
+
+.table_div  {
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    background-color:rgb(240,238,233);
+    align-items: center;
+}
+
+.table_div h1 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.table_div h1 {
+    /*padding: 15px;*/
+    color: rgb(136,126,114);
+    font-size: xxx-large;
+}
+
+.table_div h1 span {
+    padding: 15px;
+    color: darkmagenta;
+}
+
+.table_div section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Adventures Page*/
+
+/*branch_heading */
+
+.branch_heading {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color:rgb(249, 242, 246);
+    color: rgb(136,126,114);
+    font-size: xxx-large;
+    text-align: center;
+}
+
+/*Restaurant Page*/
+
+/*links for event page*/
+
+.event_container {
+    width: 100%;
+    height: 800px;
+    background-color:rgb(249, 242, 246);
+    box-sizing: border-box;
+}
+
+.event_container h1 {
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+.event_container img {
+    width: 400px;
+    height: 500px;
+}
+
+.event_container a {
+    display: block;
+}
+
+.event_container p {
+    width: 400px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: lavender;
+    margin-top: 0;
+    color: darkorchid;
+}
+
+.event_container > div:not(:first-child),
+.event_container > div:not(:last-child) {
+    margin-top: 70px;
+    margin-left: 150px;
+    margin-right: 150px;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    column-gap: 40px;
+}
+
+/*Booking page*/
+
+.main_grid {
+    display: grid;
+    grid-auto-flow: column;
+
+}
+
+.info_pane {
+    margin: 0 0 0 0;
+    padding: 40px 0 0 0;
+}
+
+.info_pane h1{
+    font-size: x-large;
+    color: red;
+    padding: 12px 0 12px 0;
+}
+
+.info_pane h2{
+    /*font-size: x-large;*/
+    color: darkmagenta;
+    padding: 5px 0 5px 0;
+}
+
+.info_pane h3{
+    /*font-size: x-large;*/
+    color: #4425d2;
+    padding: 3px 0 0 0;
+}
+
+.info_pane span{
+    display: inline-block;
+    font-size: 1.05em;
+    width: 200px;
+    padding: 0 0 5px 0;
+}
+
+#cost_info1 {
+    display: inline;
+}
+
+
+.form_container h2 {
+    font-size: xx-large;
+    color: darkmagenta;
+    padding: 25px 0 25px 0;
+}
+
+
+.date_guests {
+    display: block;
+    text-align: left;
+    padding-top: 40px;
+    margin-left: 50px;
+}
+
+.section_header{
+    font-size: xxx-large;
+    color: red;
+    padding: 0 0 20px 0;
+;
+}
+
+.center_book {
+    margin-left: 50px;
+}
+
+.center_book input,
+.center_book select {
+    width: 200px;
+    height: 30px;
+    font-size: 1.05em;
+    background-color: rgb(241,243,244);
+    text-align: center;
+    border: none;
+}
+
+.center_book label {
+    width: 200px;
+    height: 30px;
+    font-size: 1.05em;
+    display: inline-block;
+}
+
+.loyalty_span{
+    width: 200px;
+    height: 30px;
+    display: inline-block;
+    font-size: 1.05em;
+    background-color: rgb(241,243,244);
+
+    text-align: center;
+}
+.room_info{
+    padding: 0 0 15px 0;
+}
+
+.room_info label{
+    display: inline-block;
+    width: 210px;
+
+}
+
+.room_info select{
+    width: 80px;
+    padding: 8px;
+    font-size: 1.05em;
+    text-align: center;
+    background-color: rgb(241,243,244);
+    border: none;
+}
+
+.room_info h3{
+    /*color: darkmagenta;*/
+}
+
+
+.room_type{
+
+    width: 240px !important;
+
+}
+
+.adventure_types{
+    padding: 0 0 15px 0;
+}
+
+.adventure_types label{
+    display: inline-block;
+    width: 300px;
+    font-size: 1.05em;
+}
+
+
+
+/*guests section*/
+
+.guest_info select {
+    width: 80px;
+    font-size: 1.05em;
+    text-align: center;
+    padding: 8px;
+    background-color: rgb(241,243,244);
+    border: none;
+}
+
+.guest_info label {
+    display: inline-block;
+    padding-right: 10px;
+    font-size: 1.05em;
+    width: 200px;
+}
+
+.guest_info label:nth-child(4) {
+    padding-left: 10px;
+    /*font-size: 1.05em;*/
+}
+
+.extra_bed{
+    padding: 20px 0 0 0;
+}
+
+.extra_bed label{
+    width: 230px;
+}
+
+/*Extra Requirement section*/
+
+.extra_req{
+    font-size: 1.05em;
+
+}
+
+.extra_req div{
+    /*padding: 0 0 15px 0;*/
+}
+
+.extra_req label{
+    display: inline-block;
+    width: 240px;
+}
+
+.extra_req div:nth-child(1){
+    display: block;
+}
+
+.extra_req h3{
+    color: darkmagenta;
+    padding: 15px 0 15px 0;
+}
+
+/*guide requirements section*/
+
+.guide_req h2{
+    padding: 20px 0 15px 0;
+}
+.guide_req div{
+    padding: 0 0 15px 0;
+}
+
+.guide_req label{
+    display: inline-block;
+    width: 300px;
+}
+
+
+/*dates section*/
+
+.dates input {
+    padding: 10px;
+    font-size: 1.05em;
+    background-color: rgb(241,243,244);
+    /*box-shadow: none;*/
+    border: none;
+}
+
+.dates label {
+    padding-right: 10px;
+    font-size: 1.05em;
+}
+
+.dates label:nth-child(4) {
+    padding-left: 10px;
+    font-size: 1.05em;
+}
+
+/*loyalty points section*/
+
+.main_Btn {
+    font-size: 1.005em;
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    /*margin-top: 20px;*/
+    background-color: rgba(245, 6, 40, 0.84);
+    border-radius: 50px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+.adventure_Btn {
+    margin: 10px 0 30px 0;
+}
+
+.loyaltyBtn {
+    margin-top: 20px;
+}
+
+.favouriteBtn{
+    /*margin: 0 0 15px 0;*/
+    margin: 30px 0 30px 50px;
+}
+
+
+/*submit button*/
+
+.submit {
+    font-size: 1.005em;
+    /*width: 200px;*/
+    height: 40px;
+    padding: 10px;
+    margin-left: 50px;
+    background-color: darkmagenta;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.submit_container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/*Media Queries for Smartphones*/
+
+/*Navigation Section*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .nav_con {
+        display: block;
+    }
+
+    .nav_con:focus {
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        grid-template-rows: repeat(8,80px);
+        align-items: center;
+        row-gap: 2px;
+        text-align: left;
+        background-color: black;
+
+    }
+}
+
+
+/*Footer section*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .footer_divs {
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        text-align: center;
+        height: 1000px;
+
+    }
+
+    .background_footer {
+        width: 100%;
+        height: 1100px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .grid_container {
+        margin-left: 5%;
+        margin-right: 5%;
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        align-items: center;
+    }
+
+    .grid_container img {
+        width: 100%;
+    }
+
+    .grid_container p {
+        width: 100%;
+
+    }
+}
+
+/*intro_section*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .intro_section {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(2, auto);
+        text-align: left;
+
+    }
+
+    .intro_para {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+}
+
+/*main_sections*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .display {
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        grid-template-rows: repeat(2,auto);
+    }
+
+    .left_img,
+    .right_img {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 100%;
+        height: auto;
+    }
+
+    .left_txt,
+    .right_txt {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        padding: 10%;
+        background-color:rgb(240,238,233);
+
+
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .table {
+        border-collapse: collapse;
+        min-width: 400px;
+    }
+
+    .table thead tr {
+        background-color: rgb(249, 242, 246);
+        color: darkmagenta;
+        text-align: center;
+        /*font-weight: bold;*/
+    }
+
+    .table th, .table td {
+        padding: 5px;
+    }
+
+    .table tr {
+        border-bottom: 1px solid lightgrey;
+    }
+
+    .table thead tr th:nth-child(1),
+    .table thead tr th:nth-child(2),
+    .table thead tr th:nth-child(3) {
+        background-color: darkmagenta;
+        color: white;
+    }
+
+    .table tbody tr:nth-child(even) {
+        background-color: #f3f3f3;
+    }
+
+    .table tfoot {
+        background-color: rgb(249, 242, 246);
+        color: darkmagenta;
+        text-align: center;
+    }
+
+    .lrn_btn {
+        box-sizing: border-box;
+        color: white;
+        background: darkmagenta;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .table img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .table_div {
+        /*display: grid;*/
+        /*grid-template-columns: repeat(1,100%);*/
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 40px;
+        background-color: rgb(240, 238, 233);
+        align-items: center;
+    }
+
+    .table_div h1 {
+        /*padding: 15px;*/
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .table_div h1 {
+        /*padding: 15px;*/
+        color: rgb(136, 126, 114);
+        font-size: xx-large;
+    }
+
+    .table_div h1 span {
+        padding: 15px;
+        color: darkmagenta;
+    }
+
+    .table_div section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+/*Restaurant page - links to events*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    section.event_container {
+        height: 1500px;
+        margin: 0;
+    }
+
+    .event_container p {
+        width: 400px;
+        background-color: lavender;
+
+    }
+
+    .event_container > div:not(:first-child),
+    .event_container > div:not(:last-child) {
+        margin-top: 70px;
+        margin-left: 40px;
+        margin-right: 40px;
+
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+        grid-template-rows: repeat(1,auto);
+        column-gap: 0;
+        row-gap: 30px;
+    }
+
+}
+
+/*booking page*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .date_guests {
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+        grid-template-rows: repeat(2,auto);
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .dates {
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        grid-template-rows: repeat(5,auto);
+        padding: 15px;
+    }
+
+    .dates label {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .mobile_expiry select {
+           width: 100px;
+    }
+}
+
+.color_word_1{
+    color: red;
+    font-size: 1.20em;
+}
+
+.child_info_div{
+    padding-top: 10px;
+}
+
+#modal {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    /*position: fixed;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+
+}
+
+#modal.hidden {
+    display: none;
+}
+
+.confirmation{
+
+}
+
+.confirmation h2{
+    color: darkmagenta;
+    padding: 10px 0 15px 0;
+}
+
+
+.confirmation h1{
+    color: red;
+    padding: 15px 0 15px 0;
+}
+
+.confirmation h3{
+    color: blue;
+    padding: 0 0 10px 0;
+}
+
+.confirmation span{
+    display: inline-block;
+    font-size: 1.05em;
+    width: 200px;
+    padding: 0 0 5px 0;
+}
+
+.confirmation button{
+    font-size: 1.08em;
+    box-sizing: border-box;
+    color: white;
+    background: darkmagenta;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#modal2 {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    /*position: fixed;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+
+}
+
+#modal2.hidden2 {
+    display: none;
+}
+
+.confirmation2 button{
+    font-size: 1.08em;
+    box-sizing: border-box;
+    color: white;
+    background: darkmagenta;
+    margin: 20px 0 0 0;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.confirmation2 p{
+    margin: 10px 0 0;
+    font-size: 1.08em;
+}
+#thanks_message{
+    font-weight: bold;
+
+}

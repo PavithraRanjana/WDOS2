@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <title>Hotel</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="give a description about the hotel">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <script src="main2.js" defer></script>
+    </head>
+
+    <body class="body">
+    <header>
+        <nav>
+            <ul class="nav_con">
+                <li><a href="index.html">Cloudberry Hotels</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="branches.html">Branches</a></li>
+                <li><a href="adventures.html">Adventures</a></li>
+                <li><a href="restaurants.html">Restaurants</a></li>
+                <li><a href="event_1.html">Event 1</a></li>
+                <li><a href="event_2.html">Event 2</a></li>
+                <li><a href="booking.html"><button> Book </button></a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <main class="main_grid">
+            <div>
+                <form id="my_form" class="form_container">
+
+                    <section>
+                        <section class="date_guests">
+                            <!-- First Section Date Selection -->
+                            <section>
+                                <div class="dates">
+
+
+                                    <span><h1 class="section_header">Rooms Section</h1> </span>
+
+                                    <h2>Duration of Stay</h2>
+
+                                    <label for="check_in">Check-in Date</label>
+                                    <input type="date" id="check_in" name="check_in">
+
+                                    <label for="check_out">Check-out Date</label>
+                                    <input type="date" id="check_out" name="check_out">
+                                </div>
+                            </section>
+
+                            <section>
+                                <div>
+                                    <h2>Room selection</h2>
+
+                                    <div class="room_info" >
+                                        <p>Select Room Type</p>
+<!--                                        <select name="room_type" id="room_type">-->
+<!--                                            <option value="0"> - </option>-->
+<!--                                            <option value="Single"> Single </option>-->
+<!--                                            <option value="Double"> Double </option>-->
+<!--                                            <option value="Triple"> Triple </option>-->
+<!--                                        </select>-->
+                                        <br>
+
+                                        <label class="room_type" for="single">Single</label>
+                                        <input type="radio" name="room_type" id="single" value="Single">
+                                        <br>
+
+                                        <label class="room_type" for="double">Double</label>
+                                        <input type="radio" name="room_type" id="double" value="Double">
+                                        <br>
+
+                                        <label class="room_type" for="triple">Triple</label>
+                                        <input type="radio" name="room_type" id="triple" value="Triple">
+                                        
+                                    </div>
+
+                                    <div class="room_info">
+                                        <label for="num_of_rooms">Number of Rooms</label>
+                                        <select name="adults" id="num_of_rooms">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </section>
+
+                            <section>
+                                <div class="guest_info">
+                                    <h2>Guests information</h2>
+
+                                    <label for="adults">Adults</label>
+                                    <select name="adults" id="adults">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+
+
+                                    <div class="child_info_div">
+                                        <label for="children_above_5"> children (<span class="color_word_1">above</span> 5 years old)</label>
+                                        <select name="children_above_5" id="children_above_5">
+                                            <option value="0"> -</option>
+                                            <option value="1"> 1</option>
+                                            <option value="2"> 2</option>
+                                            <option value="3"> 3</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="child_info_div">
+                                        <label for="children_below_5">children (<span class="color_word_1">below</span> 5 years old)</label>
+                                        <select name="children_above_5" id="children_below_5">
+                                            <option value="0">-</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="extra_bed">
+                                        <label for="extra_bed">Add extra bed</label>
+                                        <input type="checkbox" name="extra_bed" id="extra_bed">
+                                    </div>
+
+                                </div>
+                            </section>
+
+
+                            <section class="extra_req">
+                                <div>
+                                    <h2>Extra Requirements</h2>
+
+                                    <label for="wi-fi">Wi-Fi</label>
+                                    <input type="checkbox" name="wi-fi" id="wi-fi">
+                                </div>
+
+
+                                <div>
+                                    <h3>Select the desired view</h3>
+
+                                    <div>
+                                        <label for="pool_view">Pool View</label>
+                                        <input type="radio" name="view" id="pool_view" value="pool_view">
+                                    </div>
+
+                                    <div>
+                                        <label for="garden_view">Garden View</label>
+                                        <input type="radio" name="view" id="garden_view" value="garden_view">
+                                    </div>
+                                </div>
+                            </section>
+                        </section>
+
+                        <!--                    adventure section-->
+
+                        <section class="date_guests">
+                            <h1 class="section_header">Adventure Section</h1>
+
+                            <div>
+                                <h2>Select your adventures</h2>
+
+                                <div class="adventure_types">
+                                    <label for="local_adults">Diving for local Adults</label>
+                                    <input type="checkbox" name="" id="local_adults">
+                                </div>
+
+                                <div class="adventure_types">
+                                    <label for="local_kids">Diving for local kids (above 5 years)</label>
+                                    <input type="checkbox" name="" id="local_kids">
+                                </div>
+
+                                <div class="adventure_types">
+                                    <label for="foreign_adults">Diving for foreign adults</label>
+                                    <input type="checkbox" name="" id="foreign_adults">
+                                </div>
+
+                                <div class="adventure_types">
+                                    <label for="foreign_kids">Diving for foreign kids</label>
+                                    <input type="checkbox" name="" id="foreign_kids">
+                                </div>
+
+                            </div>
+
+                            <div class="guide_req">
+
+                                <h2> Guide Requirements </h2>
+
+                                <div>
+                                    <label for="guide_for_adults"> Guide for Adults </label>
+                                    <input type="checkbox" name="guide_for_adults" id="guide_for_adults">
+                                </div>
+
+                                <div>
+                                    <label for="guide_for_kids"> Guide for Kids </label>
+                                    <input type="checkbox" name="guide_for_kids" id="guide_for_kids">
+
+                                </div>
+
+                            </div>
+
+
+
+
+                        </section>
+
+                        <section class="center_book">
+                            <section>
+                                <!-- contact information -->
+
+                                <h2>Your contact information</h2>
+
+                                <!-- first name -->
+                                <div>
+                                    <label for="first_name">First Name</label>
+                                    <input type="text" id="first_name" name="first_name">
+                                </div>
+
+                                <br>
+                                <!-- second name -->
+                                <div>
+                                    <label for="last_name">Last name</label>
+                                    <input type="text" id="last_name" name="last_name">
+                                </div>
+
+                                <br>
+
+                                <div>
+                                    <label for="country">Country</label>
+                                    <select id="country" name="country">
+
+                                        <option value="Albania">Albania</option>
+                                        <option value="Andorra">Andorra</option>
+                                        <option value="Armenia">Armenia</option>
+                                        <option value="Austria">Austria</option>
+                                        <option value="Azerbaijan">Azerbaijan</option>
+                                        <option value="Belarus">Belarus</option>
+                                        <option value="Belgium">Belgium</option>
+                                        <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                                        <option value="Bulgaria">Bulgaria</option>
+                                        <option value="Croatia">Croatia</option>
+                                        <option value="Cyprus">Cyprus</option>
+                                        <option value="Czech Republic">Czech Republic</option>
+                                        <option value="Denmark">Denmark</option>
+                                        <option value="Estonia">Estonia</option>
+                                        <option value="Finland">Finland</option>
+                                        <option value="France">France</option>
+                                        <option value="Georgia">Georgia</option>
+                                        <option value="Germany">Germany</option>
+                                        <option value="Greece">Greece</option>
+                                        <option value="Hungary">Hungary</option>
+                                        <option value="Iceland">Iceland</option>
+                                        <option value="Ireland">Ireland</option>
+                                        <option value="Italy">Italy</option>
+                                        <option value="Kazakhstan">Kazakhstan</option>
+                                        <option value="Kosovo">Kosovo</option>
+                                        <option value="Latvia">Latvia</option>
+                                        <option value="Liechtenstein">Liechtenstein</option>
+                                        <option value="Lithuania">Lithuania</option>
+                                        <option value="Luxembourg">Luxembourg</option>
+                                        <option value="Malta">Malta</option>
+                                        <option value="Moldova">Moldova</option>
+                                        <option value="Monaco">Monaco</option>
+                                        <option value="Montenegro">Montenegro</option>
+                                        <option value="Netherlands">Netherlands</option>
+                                        <option value="North Macedonia">North Macedonia</option>
+                                        <option value="Norway">Norway</option>
+                                        <option value="Poland">Poland</option>
+                                        <option value="Portugal">Portugal</option>
+                                        <option value="Romania">Romania</option>
+                                        <option value="Russia">Russia</option>
+                                        <option value="Slovenia">Sri Lanka</option>
+                                        <option value="San Marino">San Marino</option>
+                                        <option value="Serbia">Serbia</option>
+                                        <option value="Slovakia">Slovakia</option>
+                                        <option value="Slovenia">Slovenia</option>
+                                        <option value="Spain">Spain</option>
+                                        <option value="Sweden">Sweden</option>
+                                        <option value="Switzerland">Switzerland</option>
+                                        <option value="Turkey">Turkey</option>
+                                        <option value="Ukraine">Ukraine</option>
+                                        <option value="United Kingdom">United Kingdom</option>
+                                        <option value="United States">United States</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+
+                                <br>
+
+
+                                <!-- title -->
+                                <div>
+                                    <label for="title">Title</label>
+                                    <select id="title" name="title">
+                                        <option value="Mr">Mr</option>
+                                        <option value="Mrs">Mrs</option>
+                                        <option value="Ms">Ms</option>
+                                        <option value="Miss">Miss</option>
+                                        <option value="Dr">Dr</option>
+                                    </select>
+                                </div>
+
+                                <br>
+
+                                <!-- address-->
+                                <div>
+                                    <label for="address">Address</label>
+                                    <input type="text" id="address" name="address">
+                                </div>
+
+                                <br>
+
+                                <!-- city -->
+                                <div>
+                                    <label for="city">City</label>
+                                    <input type="text" id="city" name="city">
+                                </div>
+
+                                <br>
+
+                                <!-- E-mail -->
+                                <div>
+                                    <label for="E-mail1">E-mail Address</label>
+                                    <input type="email" id="E-mail1" name="E=mail1">
+                                </div>
+
+                                <br>
+
+                                <!-- mobile  number -->
+                                <div>
+                                    <label for="mobile_num">Mobile number</label>
+                                    <input type="tel" id="mobile_num" name="mobile_num" placeholder="+94 76 629 1881">
+                                </div>
+                            </section>
+
+                            <br>
+
+                            <section>
+                                <h2>Promo Code</h2>
+
+                                <div>
+                                    <label for="promo_code">Enter Promo Code</label>
+                                    <input type="text" id="promo_code" name="promo_code">
+                                </div>
+                            </section>
+
+                            <section>
+                                <h2>Loyalty Points</h2>
+
+                                <div>
+                                    <label for="points_field" >Points earned so far</label>
+<!--                                    <input type="text" id="points_field" name="promo_code" placeholder="click check loyalty button">-->
+                                    <span class="loyalty_span" id="points_field" aria-placeholder="click check loyalty button">click check loyalty button</span>
+                                    <br>
+
+                                    <button class="main_Btn loyaltyBtn" id="points_btn" type="button">Check Loyalty Points</button>
+                                </div>
+                            </section>
+
+                        </section>
+
+                        <section>
+                            <button class="main_Btn favouriteBtn" id="order_favourite_btn" type="button"> Add Order to Favourite</button>
+                        </section>
+
+                        <section class="submit_container">
+                            <!--                        <input class="submit" type="submit" value="CONFIRM BOOKING" id="submit">-->
+                            <button class="submit" type="button" id="book_room_btn"> BOOK NOW </button>
+                            <button class="submit" type="button" id="book_adventure_btn"> BOOK ADVENTURE </button>
+                        </section>
+
+                    </section>
+                </form>
+            </div>
+
+            <div class="info_pane">
+                <section>
+                    <section class="current_booking">
+                        <h1> Current Booking </h1>
+
+                        <h2> Rooms </h2>
+
+                        <p> <span>  Duration of Stay      </span> <span id="duration_info"      name="current_booking"> apple </span></p>
+                        <p> <span>  Room Type             </span> <span id="room_type_info1"    name="current_booking"> apple </span></p>
+                        <p> <span>  Number of Rooms       </span> <span id="num_rooms_info"     name="current_booking"> apple </span></p>
+                        <p> <span>  Adults                </span> <span id="adults_info"        name="current_booking"> apple </span> </p>
+                        <p> <span>  children above age 5  </span> <span id="above5_info"        name="current_booking"> apple </span> </p>
+                        <p> <span>  children below age 5  </span> <span id="below5_info"        name="current_booking"> apple </span> </p>
+                        <p> <span>  Extra Bed             </span> <span id="extra_bed_info"     name="current_booking"> apple </span> </p>
+                        <p> <span>  Extra Requirements    </span> <span id="extra_req_info"     name="current_booking"> apple </span> </p>
+                        <p> <span>  Desired View          </span> <span id="desired_view_info"  name="current_booking"> apple </span> </p>
+
+                        <h2> Adventure </h2>
+
+                        <p> <span>  Type of Adventure/s    </span> <span id="adventure_type_info" name="current_booking"> Apple </span> </p>
+                        <p> <span>  Guide for Adults       </span> <span id="guide_adult_info"    name="current_booking"> Apple </span> </p>
+                        <p> <span>  Guide for Children     </span> <span id="guide_kids_info"     name="current_booking"> Apple </span> </p>
+                    </section>
+
+                    <section class="cost_of_current_booking">
+                        <h1> Cost of Current Booking</h1>
+
+                        <h2> Rooms </h2>
+
+                        <p> <span>  Cost of a Room                       </span> <span id="cost_info1"            name="cost_of_current_booking"> apple </span> </p>
+                        <p> <span>  Cost of Rooms                       </span> <span id="cost_for_rooms"        name="cost_of_current_booking"> apple </span> </p>
+                        <p> <span>  Cost per Extra Bed                 </span> <span id="cost_per_bed_info"     name="cost_of_current_booking"> apple </span> </p>
+                        <p> <span>  Meal Cost of children above age 5  </span> <span id="kid_meal_charge_info"  name="cost_of_current_booking"> apple </span> </p>
+                        <h3> <span> Total Cost of Room                 </span> <span id="total_room_cost_header" name="info_header">                                              </span></h3>
+
+                        <h2> Adventure </h2>
+
+                        <p> <span>Cost for Adventures  </span>  <span id="adventure_cost"    name="cost_of_current_booking"> apple </span> </p>
+                        <p> <span>Guide for Adult      </span>  <span id="guide_adult_info2" name="cost_of_current_booking"> apple </span> </p>
+                        <p> <span>Guide for Children   </span>  <span id="guide_kid_info2"   name="cost_of_current_booking"> apple </span> </p>
+                        <h3> <span> Total Cost of Adventure </span> <span id="total_Adventure_cost_header", name="info_header"> </span></h3>
+            </div>
+        </main>
+
+        <div id="modal" class="hidden" >
+            <div class="confirmation" class="info_pane">
+                <h2>Hotel Room Booking Confirmation</h2>
+                <p>Your booking has been confirmed.</p>
+
+                <section class="overall_booking">
+                    <h1>Overall Booking</h1>
+
+                    <div>
+                        <h2> Rooms </h2>
+
+                        <div>
+                            <p> <span>Type of Room </span> <span id="room_type_overall"     name="overall_booking"> apple </span> </p>
+                            <p> <span>Duration     </span> <span id="duration_overall"      name="overall_booking"> apple </span> </p>
+                            <p> <span>Num of Rooms </span> <span id="num_of_rooms_overall"  name="overall_booking"> apple </span> </p>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <h2> Adventure </h2>
+                        <p> <span>Adventure Type /s </span> <span id="adventure_type_overall" name="overall_booking"> apple </span> </p>
+                    </div>
+
+                </section>
+
+                <section class="cost_of_overall_booking">
+                    <h1>Cost of Overall Booking</h1>
+
+                    <div>
+                        <h2> Rooms </h2>
+
+                        <p> <span>  Cost of a Room                      </span> <span id="cost_info1_overall"            name="overall_cost"> apple </span> </p>
+                        <p> <span>  Cost of Rooms                       </span> <span id="cost_for_rooms_overall"        name="overall_cost"> apple </span> </p>
+                        <p> <span>  Cost per Extra Bed                  </span> <span id="cost_per_bed_info_overall"     name="overall_cost"> apple </span> </p>
+                        <p> <span>  Meal Cost of children above age 5   </span> <span id="kid_meal_charge_info_overall"  name="overall_cost"> apple </span> </p>
+
+                        <h3> <span> Total                  </span> <span id="total_room_cost_header_overall" name="info_header">                                              </span></h3>
+
+                    </div>
+
+                    <div>
+                        <h2> Adventure </h2>
+
+                        <p>  <span> Adventure Costs         </span> <span id="total_adventure_cost_overall"         name="overall_cost">            Apple </span> </p>
+                        <p>  <span> Guide for Adult         </span> <span id="guide_adult_info2_overall"            name="overall_cost"> apple </span> </p>
+                        <p>  <span> Guide for Children      </span> <span id="guide_kid_info2_overall"              name="overall_cost"> apple </span> </p>
+
+                        <h3> <span> Total</span> <span id="total_Adventure_cost_header_overall"  name="info_header">                   </span></h3>
+                    </div>
+
+                    <div>
+                        <h1> <span> Overall Cost            </span> <span id="overall_cost"         name="info_header">  Apple </span> </h1>
+                    </div>
+                </section>
+                <button id="dismiss_btn_book_now"> Dismiss</button>
+            </div>
+
+        </div>
+
+        <div id="modal2" class="hidden2 confirmation2" >
+            <p id="thanks_message"></p>
+            <p id="adventure_details"></p>
+            <button id="dismiss_btn_adventure"> Dismiss</button>
+        </div>
+
+        <footer class="background_footer">
+            <!-- navigation menu -->
+            <div class="footer_divs">
+
+                <div>
+                    <h3 class="footer_heading">Explore</h3>
+                    <nav>
+                        <ul class="footer_ul">
+                            <li class="footer_li"><a class="footer_a" href="index.html">Home</a></li>
+                            <li class="footer_li"><a class="footer_a" href="adventures.html">Adventures</a></li>
+                            <li class="footer_li"><a class="footer_a" href="event_1.html">Event 1</a></li>
+                            <li class="footer_li"><a class="footer_a" href="event_2.html">Event 2</a></li>
+                            <li class="footer_li"><a class="footer_a" href="branches.html">Branches</a></li>
+                            <li class="footer_li"><a class="footer_a" href="restaurants.html">Restaurants</a></li>
+                            <li class="footer_li"><a class="footer_a" href="booking.html">Booking</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+
+                <!--                iframe - colombo branch-->
+                <div>
+                    <h3 class="footer_heading"> Colombo Branch </h3>
+                    <iframe class="loc1_iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.7562612021147!2d79.84473462101636!3d6.919715399859826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2593b8b2c88ff%3A0x4537fcdaf592ff11!2sGalle%20Face%2C%20Colombo!5e0!3m2!1sen!2slk!4v1693418078893!5m2!1sen!2slk" width="350" height="200" style="border0:;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="google map location for Colombo Branch"></iframe>
+                </div>
+
+                <!--                iframe - misrissa branch-->
+                <div>
+                    <h3 class="footer_heading"> Mirissa Branch </h3>
+                    <iframe class="loc2_iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3968.3707029315606!2d80.4561530752273!3d5.943542029630617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae13fd4c636d5ff%3A0xb81456b9b41a93b2!2sMirissa%20Beach!5e0!3m2!1sen!2slk!4v1693419832109!5m2!1sen!2slk" width="350" height="200" style="border0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="google map location for Mirissa Branch"></iframe>
+                </div>
+
+                <!--                social media-->
+                <div>
+                    <h3 class="footer_heading">Follow us</h3>
+                    <nav class="social_ul">
+                        <ul>
+                            <li class="social_li"><a href="https://www.facebook.com"><img class="footer_icons" src="facebook.svg" alt="facebook logo"> </a> </li>
+                            <li class="social_li"><a href="https://www.instagram.com"><img class="footer_icons" src="instagram.svg" alt="instergram logo"> </a> </li>
+                            <li class="social_li"><a href="https://twitter.com/"><img class="footer_icons" src="twitterx.svg" alt="twitterX logo"> </a> </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <br>
+            <hr>
+            <br>
+            <p class="copyright">Copyright © Cloudberry Hotels. All rights reserved.</p>
+        </footer>
+
+
+    </body>
+</html>
+
