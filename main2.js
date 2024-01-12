@@ -90,6 +90,7 @@ let correctPromo = "Promo123";
 let promoValue;
 let totalLoyaltyPoints;
 let loyaltyPointsValue;
+let startingLoyaltyPoints = 0;
 
 // Initialization functions - Purpose : sets the inner text of selected DOM elements to - and 0 
 function initializeCurrentBooking(){
@@ -538,15 +539,29 @@ function hideAdventureConf(){
 // this function will check weather loyalty points can be given
 function loyaltyPoint(){
     if (roomsCount > 3){
+        startingLoyaltyPoints = 0;
+
+        let storedStartingLoyaltyPoints = localStorage.getItem('startingLoyaltyPoints');
+
+        if (storedStartingLoyaltyPoints){
+            startingLoyaltyPoints = parseInt(storedStartingLoyaltyPoints);
+        }
+
+        // localStorage.setItem('startingLoyaltyPoints', startingLoyaltyPoints);
+
         totalLoyaltyPoints = roomsCount * 20;
-        localStorage.setItem('loyaltyPoints', totalLoyaltyPoints);
+        startingLoyaltyPoints += totalLoyaltyPoints;
+        // startingLoyaltyPoints = parseInt(localStorage.getItem(startingLoyaltyPoints)) + totalLoyaltyPoints;
+        // localStorage.setItem('startingLoyaltyPoints', startingLoyaltyPoints);
+        localStorage.setItem('startingLoyaltyPoints', startingLoyaltyPoints);
     }
 }
 
 // this function will display the loyalty points
 function displayLoyaltyPoints(){
-    loyaltyPointsValue = localStorage.getItem('loyaltyPoints')
+    loyaltyPointsValue = localStorage.getItem('startingLoyaltyPoints')
     loyaltyPointsField.innerText = loyaltyPointsValue;
+
 }
 
 // the function to book an room and adventure at same time
