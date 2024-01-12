@@ -545,7 +545,7 @@ function loyaltyPoint(){
 
 // this function will display the loyalty points
 function displayLoyaltyPoints(){
-    loyaltyPointsValue = localStorage.getItem('LoyaltyPoints')
+    loyaltyPointsValue = localStorage.getItem('loyaltyPoints')
     loyaltyPointsField.innerText = loyaltyPointsValue;
 }
 
